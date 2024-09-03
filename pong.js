@@ -85,4 +85,41 @@ function render() {
 
     // Draw the paddles
     drawRect(player.x, player.y, player.width, player.height, '#fff');
-    drawRect(ai.x, ai.y, ai.width, ai.height, 
+    drawRect(ai.x, ai.y, ai.width, ai.height, '#fff');
+
+    // Draw the ball
+    drawCircle(ball.x, ball.y, ball.radius, '#fff');
+}
+
+function gameLoop() {
+    update();
+    render();
+    requestAnimationFrame(gameLoop);
+}
+
+let upPressed = false;
+let downPressed = false;
+
+window.addEventListener('keydown', (event) => {
+    switch (event.key) {
+        case 'ArrowUp':
+            upPressed = true;
+            break;
+        case 'ArrowDown':
+            downPressed = true;
+            break;
+    }
+});
+
+window.addEventListener('keyup', (event) => {
+    switch (event.key) {
+        case 'ArrowUp':
+            upPressed = false;
+            break;
+        case 'ArrowDown':
+            downPressed = false;
+            break;
+    }
+});
+
+gameLoop();

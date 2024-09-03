@@ -26,13 +26,13 @@
         </div>
     </footer>
 
-    <!-- Include the Pong game JavaScript file -->
-    <script src="pong.js"></script>
     <!-- Load the menu -->
     <script>
         fetch('menu.html')
             .then(response => response.text())
             .then(data => document.getElementById('menu-container').innerHTML = data);
     </script>
+    <!-- Include the Pong game JavaScript file -->
+    <script src="pong.js"></script>
 </body>
 </html>
