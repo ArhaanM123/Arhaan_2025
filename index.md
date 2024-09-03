@@ -5,7 +5,7 @@ description: Home Page
 hide: true
 ---
 
-My journey starts here. My name is Arhaan Memon 
+My name is Arhaan Memon and my journey starts here. 
 
 <html lang="en">
 <head>
