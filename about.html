@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arhaan Memon - About</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="menu-container"></div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="images/arhaan.jpg" alt="Arhaan Memon" style="width:200px; float:left; margin-right:20px;">
+            <p>Hello! I am Arhaan Memon, a 10th grader passionate about basketball, computer science, and data analytics. I play for my high school basketball team, where I learn the value of discipline and teamwork.</p>
+            <p>Beyond sports, my interests in computer science and data analytics drive me to explore innovative solutions through technology. I aspire to combine my love for tech and sports to create impactful projects in the future.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Arhaan Memon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Load the menu -->
+    <script>
+        fetch('menu.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('menu-container').innerHTML = data);
+    </script>
+</body>
+</html>

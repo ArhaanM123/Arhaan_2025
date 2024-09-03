@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arhaan Memon - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="menu-container"></div>
+    </header>
+
+    <main class="hero-section">
+        <div class="container">
+            <h2>Welcome to My Website</h2>
+            <p>I am passionate about <strong>Basketball</strong>, <strong>Computer Science</strong>, and <strong>Data Analytics</strong>.</p>
+            <h3>Play Pong!</h3>
+            <canvas id="pongCanvas" width="600" height="400"></canvas>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Arhaan Memon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Load the menu -->
+    <script>
+        fetch('menu.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('menu-container').innerHTML = data);
+    </script>
+    <!-- Include the Pong game JavaScript file -->
+    <script src="pong.js"></script>
+</body>
+</html>
