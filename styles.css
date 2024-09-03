@@ -3,74 +3,99 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
     color: #333;
-}
-
-h1, h2 {
-    font-weight: normal;
-    margin: 0 0 20px;
 }
 
 a {
     text-decoration: none;
-    color: #007acc;
+    color: #333;
 }
 
-/* Header Styles */
-.main-header {
-    background-color: #007acc;
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
     color: white;
-    padding: 20px 0;
-    text-align: center;
+    padding: 10px 0;
 }
 
-.main-header nav ul {
-    list-style-type: none;
-    padding: 0;
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.main-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.main-header nav ul li a {
-    color: white;
+.logo a {
+    font-size: 24px;
     font-weight: bold;
+    color: white;
 }
 
-.main-header nav ul li a.active {
-    text-decoration: underline;
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-/* Main Content Styles */
-main {
-    padding: 20px;
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #007acc;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    background: url('https://nighthawkcoders.github.io/portfolio_2025/images/background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.hero-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 18px;
+}
+
+/* Content Section Styles */
+.content-section {
+    padding: 50px 20px;
+}
+
+.content-section .container {
     max-width: 800px;
     margin: 0 auto;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.intro {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.about-content {
-    text-align: left;
-    margin-top: 50px;
 }
 
 /* Footer Styles */
 footer {
-    background-color: #007acc;
+    background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
+    padding: 20px 0;
+    position: relative;
     bottom: 0;
+    width: 100%;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
