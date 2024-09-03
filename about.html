@@ -8,73 +8,29 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="container">
-                <h1 class="logo"><a href="index.html">Arhaan Memon</a></h1>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="active">About</a></li>
-                    <li><a href="blogs.html">Blogs</a></li>
-                    <li><a href="#">Search</a></li>
-                    <li><a href="#">Read Me</a></li>
-                </ul>
-            </div>
-        </nav>
+        <div id="menu-container"></div>
     </header>
 
-</nav>
-<main class="content-section">
-    <div class="container">
-        <h2>About Me</h2>
-        <p style="line-height: 1.8em; font-size: 1.2em;">
-            My name is <strong>Arhaan Memon</strong>, and I am a <strong>10th grader</strong> with a passion for both academics and athletics. 
-            Balancing my time between the classroom and the basketball court, I strive to excel in everything I do.
-        </p>
+    <main>
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="https://source.unsplash.com/400x400/?student,tech" alt="Arhaan Memon" style="width:200px; float:left; margin-right:20px;">
+            <p>Hello! I am Arhaan Memon, a 10th grader passionate about basketball, computer science, and data analytics. I play for my high school basketball team, where I learn the value of discipline and teamwork.</p>
+            <p>Beyond sports, my interests in computer science and data analytics drive me to explore innovative solutions through technology. I aspire to combine my love for tech and sports to create impactful projects in the future.</p>
+        </div>
+    </main>
 
-        <h3 style="margin-top: 30px;">My Love for Basketball</h3>
-        <p style="line-height: 1.8em; font-size: 1.2em;">
-            I have a deep love for basketball and am proud to represent my high school team as a player. 
-            The thrill of competition, the camaraderie with my teammates, and the lessons in perseverance and teamwork 
-            have shaped who I am today. Every time I step onto the court, I am reminded of the importance of discipline, 
-            hard work, and determination—qualities that I apply not just in sports, but in every aspect of my life.
-        </p>
-
-        <h3 style="margin-top: 30px;">Passion for Computer Science and Data Analytics</h3>
-        <p style="line-height: 1.8em; font-size: 1.2em;">
-            Beyond the basketball court, I have a strong passion for <strong>computer science</strong> and <strong>data analytics</strong>. 
-            The world of technology fascinates me, and I am constantly seeking to learn more about how it can be used to solve real-world 
-            problems. Whether it's coding a new application, analyzing data sets, or exploring the latest advancements in the tech industry, 
-            I am always eager to expand my knowledge and skills.
-        </p>
-
-        <h3 style="margin-top: 30px;">Future Aspirations</h3>
-        <p style="line-height: 1.8em; font-size: 1.2em;">
-            In the future, I aim to pursue a career in computer science, where I can combine my love for technology with my analytical skills 
-            to make a meaningful impact. I believe that the intersection of sports and technology offers unique opportunities, and I am excited 
-            to explore how data analytics can be used to enhance athletic performance and strategy.
-        </p>
-
-        <h3 style="margin-top: 30px;">Looking Ahead</h3>
-        <p style="line-height: 1.8em; font-size: 1.2em;">
-            As I continue my journey through high school, I am committed to growing both as a student and as an athlete. 
-            My experiences in both arenas will prepare me for the challenges ahead and help me achieve my goals. 
-            Thank you for visiting my website, and I hope you will join me as I continue to pursue my passions 
-            and make the most of every opportunity that comes my way.
-        </p>
-
-        <p style="line-height: 1.8em; font-size: 1.2em; margin-top: 30px;">
-            If you would like to learn more about my projects, interests, or just connect, feel free to reach out 
-            through the contact page. I'm always open to new ideas, collaborations, and discussions about basketball, 
-            technology, or anything in between.
-        </p>
-    </div>
-</main>
-
-
-<footer>
+    <footer>
         <div class="container">
             <p>&copy; 2024 Arhaan Memon. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Load the menu -->
+    <script>
+        fetch('menu.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('menu-container').innerHTML = data);
+    </script>
 </body>
 </html>

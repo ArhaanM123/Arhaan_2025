@@ -8,18 +8,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="container">
-                <h1 class="logo"><a href="index.html">Arhaan Memon</a></h1>
-                <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="#">Search</a></li>
-                    <li><a href="#">Read Me</a></li>
-                </ul>
-            </div>
-        </nav>
+        <div id="menu-container"></div>
     </header>
 
     <main class="hero-section">
@@ -39,5 +28,11 @@
 
     <!-- Include the Pong game JavaScript file -->
     <script src="pong.js"></script>
+    <!-- Load the menu -->
+    <script>
+        fetch('menu.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('menu-container').innerHTML = data);
+    </script>
 </body>
 </html>

@@ -1,101 +1,36 @@
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
-}
-
-a {
-    text-decoration: none;
-    color: #333;
-}
-
-/* Navbar Styles */
+/* Menu Styles */
 .navbar {
-    background-color: #333;
+    background-color: #0066cc;
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
+    text-align: center;
 }
 
-.navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.logo a {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-}
-
-.nav-links {
-    list-style-type: none;
+.navbar h1 {
     margin: 0;
+    font-size: 24px;
+}
+
+.navbar ul {
+    list-style-type: none;
     padding: 0;
     display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
-.nav-links li {
-    margin-left: 20px;
+.navbar ul li {
+    margin: 0 20px;
 }
 
-.nav-links a {
+.navbar ul li a {
     color: white;
-    padding: 5px 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    background-color: #005bb5;
     border-radius: 5px;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-    background-color: #007acc;
-}
-
-/* Hero Section Styles */
-.hero-section {
-    background: url('https://nighthawkcoders.github.io/portfolio_2025/images/background.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 150px 0;
-}
-
-.hero-section h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.hero-section p {
-    font-size: 18px;
-}
-
-/* Content Section Styles */
-.content-section {
-    padding: 50px 20px;
-}
-
-.content-section .container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
 }
