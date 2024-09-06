@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arhaan Memon - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic page layout */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .hero-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* CSS for Mario sprite */
+        .sprite {
+            height: 256px;
+            width: 256px;
+            background-image: url('./images/mario_animation.png');
+            background-repeat: no-repeat;
+        }
+
+        #mario {
+            background-position: 0px 0px;
+        }
+
+        /* Make sure canvas doesn't overlap */
+        canvas {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="menu-container">
+            <!-- Menu content will be loaded here -->
+        </div>
+    </header>
+
+    <main class="hero-section">
+        <div class="container">
+            <h2>Welcome to My Website</h2>
+            <p>I am passionate about <strong>Basketball</strong>, <strong>Computer Science</strong>, and <strong>Data Analytics</strong>.</p>
+            <h3>Play Pong!</h3>
+            <!--<canvas id="pongCanvas" width="600" height="400"></canvas>-->
+            <canvas id="pongCanvas" width="600" height="400"></canvas>
+        </div>
+
+        <!-- Mario animation -->
+        <p id="mario" class="sprite"></p>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Arhaan Memon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Load the menu -->
+    <script>
+        fetch('menu.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('menu-container').innerHTML = data);
+    </script>
+
+    <!-- Include the Pong game JavaScript file -->
+    <script src="pong.js"></script>
+    <script src="mario.js"></script>
+</body>
+</html>
