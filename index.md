@@ -6,7 +6,7 @@ image: /images/mario_animation.png
 hide: true
 ---
 
-My name is Arhaan Memon and my journey starts here. 
+**My name is Arhaan Memon and my journey starts here.**
 
 <!-- Liquid:  statements -->
 
