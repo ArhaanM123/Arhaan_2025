@@ -3,15 +3,43 @@ layout: page
 title: About
 permalink: /about/
 ---
+
+This page allows you to toggle between two different themes using a button.
+
+<button onclick="toggleTheme()">Switch Theme</button>
+
+<!-- Link to the default theme stylesheet -->
+<link id="default-theme" rel="stylesheet" href="{{ 'assets/css/styles.css' | relative_url }}" disabled>
+
+<!-- Link to the custom theme stylesheet -->
+<link id="custom-theme" rel="stylesheet" href="{{ '_sass/_site/minima/custom-styles.scss' | relative_url }}">
+
+<script>
+  // Function to toggle between themes
+  function toggleTheme() {
+    const defaultTheme = document.getElementById('default-theme');
+    const customTheme = document.getElementById('custom-theme');
+
+    // Toggle between enabling and disabling the two themes
+    if (defaultTheme.disabled) {
+      defaultTheme.disabled = false;
+      customTheme.disabled = true;
+    } else {
+      defaultTheme.disabled = true;
+      customTheme.disabled = false;
+    }
+  }
+</script>
+
 # Arhaan Memon: A Rising Star in Tech and Sports
 
 Ever met someone who can seamlessly balance their passion for sports and cutting-edge technology? Meet **Arhaan Memon**, a 10th grader with a love for **basketball** and a keen interest in **computer science** and **data analytics**. Whether he's on the court or coding the next big app, Arhaan is always striving for excellence.
 
 ![Basketball Action](../images/arhaan-bball.jpg)
 
-With an eye on the future, Arhaan’s combination of athletic drive and technical prowess makes him stand out. As a player for his high school basketball team, he’s learned discipline and teamwork, both of which he applies to his coding projects. Arhaan dreams of merging his love for sports and tech to revolutionize the game through data analytics. [Learn more about how data analytics is transforming sports](https://www.analyticsvidhya.com/blog/2021/10/data-analytics-in-sports-how-it-is-changing-the-game/).
+With an eye on the future, Arhaan’s combination of athletic drive and technical prowess makes him stand out. [Learn more about how data analytics is transforming sports](https://www.linkedin.com/pulse/game-changing-impact-data-analytics-sports-jon-flynn-fs5ie/).
 
-Curious about how technology is changing the future of basketball? Read this article on [emerging tech in sports](https://www.nba.com/news/how-technology-is-changing-the-future-of-basketball) to see how Arhaan’s vision might shape the game.
+Curious about how technology is changing the future of basketball? Read this article on [emerging tech in sports](https://www.sogeti.com/explore/reports/emerging-technologies-in-sports/) to see how Arhaan’s vision might shape the game.
 
 <style>
     /* Style looks pretty compact, trace grid-container and grid-item in the code */
