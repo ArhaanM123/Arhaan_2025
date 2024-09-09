@@ -53,6 +53,11 @@ Curious about how technology is changing the future of basketball? Read this art
 <iframe width="560" height="315" src="https://www.youtube.com/embed/H-LcQApiDPs?si=Fs4qNbc2NrPilHFV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
+## Notebooks
+
+- ### [New Paper Articles](#data-analysis)
+  - [Notebook 1: News Paper and Wikipedia Articles](../notebooks/arhaan.md)
+
 
 <script>
     // 1. Make a connection to the HTML container defined in the HTML div

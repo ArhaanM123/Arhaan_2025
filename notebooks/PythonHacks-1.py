@@ -4,6 +4,21 @@ import wikipedia
 from IPython.display import display, Markdown # add for Jupyter
 import inspect 
 from newspaper import Article
+import os
+
+# Define the directory where notebooks will be saved
+notebook_dir = 'notebooks'
+
+# Ensure the directory exists
+os.makedirs(notebook_dir, exist_ok=True)
+
+# Example of generating a file path
+notebook_path = os.path.join(notebook_dir, 'my_notebook.ipynb')
+
+# Save the notebook (this is just an example, you would typically use nbformat or other tools to generate the notebook)
+with open(notebook_path, 'w') as f:
+    f.write("# Jupyter Notebook Content")
+
 
 print(emojize(":winking_face: Python is funny! :kissing_face:"))
 
@@ -35,4 +50,5 @@ for term in terms:
 
 
     # inspect newspaper Article function
-    print(inspect.getsource(Article))
+ #   print(inspect.getsource(Article))
+    
