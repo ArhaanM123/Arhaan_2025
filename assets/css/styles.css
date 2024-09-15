@@ -1,77 +1,74 @@
 /* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f4f8;
-    color: #333;
+    background-color: #0680fa; /* Blue theme background */
+    color: #fff; /* Default text color for blue theme (white) */
     margin: 0;
     padding: 0;
 }
 
+/* White Theme Class */
+.white-theme {
+    background-color: #fff; /* White theme background */
+    color: #000; /* Dark text for white background */
+}
+
 a {
     text-decoration: none;
-    color: #0066cc;
+    color: #ffffff; /* Links in blue theme will be white */
+}
+
+/* Adjust links for white theme */
+.white-theme a {
+    color: #000000; /* Links will be black in white theme */
 }
 
 h1, h2, h3 {
     font-weight: normal;
     margin: 0 0 15px;
+    color: inherit; /* Inherit text color */
 }
 
+/* Header */
 header {
-    background-color: #0066cc;
-    color: white;
+    background-color: #0066cc; /* Blue header background */
+    color: #ffffff; /* Keep text in the header white */
     padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
+    color: inherit; /* Inherit the header color */
 }
 
-.navbar ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.navbar ul li {
-    margin: 0 20px;
-}
-
+/* Navbar Links */
 .navbar ul li a {
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
+    color: #ffffff; /* White for blue theme */
 }
 
-.navbar ul li a:hover,
-.navbar ul li a.active {
-    background-color: #005bb5;
-    border-radius: 5px;
+.white-theme .navbar ul li a {
+    color: #000000; /* Black for white theme */
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
+/* Main Section */
 main {
     background-color: white;
+    color: #000; /* Dark text for better readability */
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Footer */
 footer {
     background-color: #0066cc;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    color: #ffffff; /* Footer text remains white */
+}
+
+.white-theme footer {
+    background-color: #ffffff;
+    color: #000000; /* Dark text for white theme footer */
 }
 
 /* Hero Section */
@@ -81,31 +78,15 @@ footer {
     background-image: url('https://source.unsplash.com/1600x900/?nature,blue');
     background-size: cover;
     background-position: center;
-    color: white;
+    color: #000000; /* White text for blue-themed hero */
 }
 
-.hero-section h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
+.white-theme .hero-section {
+    background-color: #ffffff; /* Switch to white background in white theme */
+    color: #000000; /* Black text for white theme */
 }
 
-.hero-section p {
-    font-size: 20px;
-    margin-bottom: 30px;
-}
 
-/* Blog List */
-.blog-list article {
-    margin-bottom: 40px;
-}
-
-.blog-list article h3 {
-    margin-bottom: 10px;
-}
-
-.blog-list article p {
-    font-size: 18px;
-}
 
 /* Pong Game */
 #pongCanvas {

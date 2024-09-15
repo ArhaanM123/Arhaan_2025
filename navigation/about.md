@@ -28,6 +28,7 @@ This page allows you to toggle between two different themes using a button.
       defaultTheme.disabled = true;
       customTheme.disabled = false;
     }
+    
   }
 </script>
 
@@ -58,6 +59,7 @@ Curious about how technology is changing the future of basketball? Read this art
     }
     .grid-item p {
         margin: 5px 0; /* Add some margin for spacing */
+        
     }
 </style>
 
