@@ -21,7 +21,7 @@ a {
 }
 
 a:hover {
-    color: #ffe600; /* Slight hover effect for links */
+    color: #dbeafe; /* Light blue highlight on hover */
 }
 
 /* Adjust links for white theme */
@@ -42,7 +42,7 @@ h1, h2, h3 {
 
 /* Header */
 header {
-    background-color: #005bb5; /* Softer blue for header */
+    background-color: #005bb5; /* Soft blue for header */
     color: #ffffff; /* White text in header */
     padding: 20px 0;
     text-align: center;
@@ -68,7 +68,7 @@ header h1 {
 }
 
 .navbar ul li a:hover {
-    color: #ffe600; /* Yellow highlight on hover */
+    color: #dbeafe; /* Light blue highlight on hover */
 }
 
 .white-theme .navbar ul li a {
@@ -81,7 +81,7 @@ header h1 {
 
 /* Main Section */
 main {
-    background-color: #991515; /* Rich dark red for main background */
+    background-color: #0a66b5; /* Deep blue background for main */
     color: #f8f9fa; /* Light text for readability */
     padding: 40px;
     border-radius: 10px;
@@ -112,7 +112,7 @@ footer {
     background-image: url('https://source.unsplash.com/1600x900/?nature,blue');
     background-size: cover;
     background-position: center;
-    color: #f8f9fa; /* Soft white text for blue-themed hero */
+    color: #f0f8ff; /* Soft white text for blue-themed hero */
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Add text shadow */
     animation: fadeIn 2s ease-out; /* Smooth fade-in animation */
 }
@@ -128,7 +128,7 @@ footer {
 #pongCanvas {
     display: block;
     margin: 20px auto;
-    background-color: #fff;
+    background-color: #f0f8ff; /* Light canvas background */
     border: 3px solid #005bb5; /* Match theme blue */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add some depth */
