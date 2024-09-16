@@ -2,73 +2,107 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #0680fa; /* Blue theme background */
-    color: #fff; /* Default text color for blue theme (white) */
+    color: #f0f8ff; /* Softer text color for blue theme */
     margin: 0;
     padding: 0;
+    line-height: 1.6; /* Improve readability */
 }
 
 /* White Theme Class */
 .white-theme {
-    background-color: #fff; /* White theme background */
-    color: #000; /* Dark text for white background */
+    background-color: #ffffff; /* White theme background */
+    color: #333333; /* Darker text for white background */
 }
 
 a {
     text-decoration: none;
-    color: #ffffff; /* Links in blue theme will be white */
+    color: #f0f8ff; /* Links in blue theme will be a soft white */
+    transition: color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+a:hover {
+    color: #ffe600; /* Slight hover effect for links */
 }
 
 /* Adjust links for white theme */
 .white-theme a {
-    color: #000000; /* Links will be black in white theme */
+    color: #333333; /* Links will be dark in white theme */
+}
+
+.white-theme a:hover {
+    color: #007acc; /* Blue hover effect in white theme */
 }
 
 h1, h2, h3 {
-    font-weight: normal;
-    margin: 0 0 15px;
+    font-weight: 700; /* Bold headings for better emphasis */
+    margin: 0 0 20px;
     color: inherit; /* Inherit text color */
+    letter-spacing: 1px;
 }
 
 /* Header */
 header {
-    background-color: #0066cc; /* Blue header background */
-    color: #ffffff; /* Keep text in the header white */
+    background-color: #005bb5; /* Softer blue for header */
+    color: #ffffff; /* White text in header */
     padding: 20px 0;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: sticky; /* Fixed header */
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
     margin: 0;
     color: inherit; /* Inherit the header color */
+    font-size: 2.5em;
+    animation: fadeInDown 1s ease-out; /* Add fade-in animation */
 }
 
 /* Navbar Links */
 .navbar ul li a {
     color: #ffffff; /* White for blue theme */
+    padding: 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ffe600; /* Yellow highlight on hover */
 }
 
 .white-theme .navbar ul li a {
     color: #000000; /* Black for white theme */
 }
 
+.white-theme .navbar ul li a:hover {
+    color: #007acc; /* Blue hover effect for white theme */
+}
+
 /* Main Section */
 main {
-    background-color: white;
-    color: #000; /* Dark text for better readability */
+    background-color: #991515; /* Rich dark red for main background */
+    color: #f8f9fa; /* Light text for readability */
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); /* Enhance shadow for depth */
+    max-width: 1200px;
+    margin: 40px auto;
+    animation: fadeInUp 1s ease-out; /* Add fade-in animation for content */
 }
 
 /* Footer */
 footer {
-    background-color: #0066cc;
+    background-color: #005bb5; /* Match header background */
     color: #ffffff; /* Footer text remains white */
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow on top */
 }
 
 .white-theme footer {
     background-color: #ffffff;
-    color: #000000; /* Dark text for white theme footer */
+    color: #333333; /* Dark text for white theme footer */
 }
 
 /* Hero Section */
@@ -78,20 +112,56 @@ footer {
     background-image: url('https://source.unsplash.com/1600x900/?nature,blue');
     background-size: cover;
     background-position: center;
-    color: #000000; /* White text for blue-themed hero */
+    color: #f8f9fa; /* Soft white text for blue-themed hero */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Add text shadow */
+    animation: fadeIn 2s ease-out; /* Smooth fade-in animation */
 }
 
 .white-theme .hero-section {
     background-color: #ffffff; /* Switch to white background in white theme */
-    color: #000000; /* Black text for white theme */
+    color: #333333; /* Darker text for white theme */
+    background-image: none; /* Remove background image in white theme */
+    transition: background-color 0.3s ease;
 }
-
-
 
 /* Pong Game */
 #pongCanvas {
     display: block;
     margin: 20px auto;
     background-color: #fff;
-    border: 3px solid #0066cc;
+    border: 3px solid #005bb5; /* Match theme blue */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add some depth */
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
