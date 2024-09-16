@@ -9,10 +9,8 @@ This page allows you to toggle between two different themes using a button.
 <button onclick="toggleTheme()">Switch Theme</button>
 
 <!-- Link to the default theme stylesheet -->
-<link id="default-theme" rel="stylesheet" href="{{ 'assets/css/styles.css' | relative_url }}" disabled>
+<link id="default-theme" rel="stylesheet" href="{{ 'assets/css/styles.css' | relative_url }}">
 
-<!-- Link to the custom theme stylesheet -->
-<link id="custom-theme" rel="stylesheet" href="{{ '_sass/_site/minima/custom-styles.scss' | relative_url }}">
 
 <script>
   // Function to toggle between themes
