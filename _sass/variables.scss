@@ -1,0 +1,19 @@
+// _sass/variables.scss
+
+// Theme variables for blue theme
+$blue-primary: #005bb5;
+$blue-secondary: #f0f4f8;
+$blue-text-color: #333;
+$blue-bg-color: #e6f0fa; 
+
+// Theme variables for red theme
+$red-primary: #b50000;
+$red-secondary: #f8e1e1;
+$red-text-color: #000;
+$red-bg-color: #ffe6e6;
+
+// Common variables
+$font-stack: 'Arial', sans-serif;
+
+// Set default primary color (for example, blue theme by default)
+$primary-color: $blue-primary;  // Define $primary-color as $blue-primary or $red-primary as default
