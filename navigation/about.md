@@ -6,29 +6,31 @@ permalink: /about/
 
 This page allows you to toggle between two different themes using a button.
 
-<button onclick="toggleTheme()">Switch Theme</button>
-
-<!-- Link to the default theme stylesheet -->
-<link id="default-theme" rel="stylesheet" href="{{ 'assets/css/styles.css' | relative_url }}">
-
+<!-- Link to the default theme stylesheet 
+<link id="default-theme" rel="stylesheet" href="{{ 'assets/css/styles.css' | relative_url }}"> -->
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+ 
+<button onclick="toggleTheme()">Change Theme</button>
 
 <script>
-  // Function to toggle between themes
   function toggleTheme() {
-    const defaultTheme = document.getElementById('default-theme');
-    const customTheme = document.getElementById('custom-theme');
+    const body = document.body;
 
-    // Toggle between enabling and disabling the two themes
-    if (defaultTheme.disabled) {
-      defaultTheme.disabled = false;
-      customTheme.disabled = true;
+    // If the current theme is blue, switch to red
+    if (body.classList.contains('blue-theme')) {
+      body.classList.remove('blue-theme');
+      body.classList.add('red-theme');
     } else {
-      defaultTheme.disabled = true;
-      customTheme.disabled = false;
+      // Otherwise, switch to blue
+      body.classList.remove('red-theme');
+      body.classList.add('blue-theme');
     }
-    
   }
+
+  // Set initial theme
+  document.body.classList.add('blue-theme');  // Default theme
 </script>
+
 
 # Arhaan Memon: A Rising Star in Tech and Sports
 

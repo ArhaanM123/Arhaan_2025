@@ -5,6 +5,8 @@ github_username: nighthawkcoders
 github_repo: "Arhaan_2025" 
 baseurl: "/Arhaan_2025"
 future: true
+sass:
+  sass_dir: _sass
 remote_theme: jekyll/minima
 minima:
   skin: dark

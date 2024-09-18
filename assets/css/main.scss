@@ -1,0 +1,29 @@
+---
+---
+
+@import "variables";
+@import "mixins";
+@import "base";
+@import "custom";
+@import "themes";     // Import theme styles
+
+// General styles for both themes
+body {
+    font-family: $font-stack;
+    line-height: 1.6;
+    transition: background-color 0.3s ease;  // Add smooth transitions for background changes
+    background-color: $blue-bg-color;  // Using the blue theme background color
+    color: $blue-text-color;
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+h1 {
+    color: $primary-color;  // $primary-color now has a value
+}
