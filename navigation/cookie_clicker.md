@@ -11,12 +11,10 @@ permalink: /cookie/
 
 <p style="text-align: center; font-size: 1.5em;">Click the cookie to earn points!</p>
 
- ![cookie](../images/Cookie-Clicker.png) 
+ ![Cookie](../images/Cookie-Clicker.png)
 
 <div style="text-align: center;">
-  <h2 style="font-family: 'Arial', sans-serif; font-size: 2em; color: #4CAF50; margin-top: 20px;">Score: <span id="score">0</
-  
-  span></h2>
+  <h2 style="font-family: 'Arial', sans-serif; font-size: 2em; color: #4CAF50; margin-top: 20px;">Score: <span id="score">0</span></h2>
 </div>
 
 <script>
