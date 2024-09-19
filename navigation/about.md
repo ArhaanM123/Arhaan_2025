@@ -88,6 +88,13 @@ Curious about how technology is changing the future of basketball? Read this art
 - ### [New Paper Articles](#data-analysis)
   - [Notebook 1: News Paper and Wikipedia Articles](../notebooks/arhaan.md)
 
+<script src="https://utteranc.es/client.js"
+        repo="ArhaanM123/arhaan_2025"
+        issue-term="pathname"
+        theme="github-dark-orange"
+        crossorigin="anonymous"
+        async>
+</script>
 
 <script>
     // 1. Make a connection to the HTML container defined in the HTML div
@@ -167,4 +174,3 @@ Curious about how technology is changing the future of basketball? Read this art
         updateImage();
     });
 </script>
-
