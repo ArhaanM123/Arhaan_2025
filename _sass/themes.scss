@@ -1,17 +1,21 @@
 // Blue theme styles
 .blue-theme {
-    html, body {
-        background-color: #e6f0fa;  // Light blue background
-        color: #333;  // Text color for blue theme
+    html, body, .container, .page, .content, main {
+        background-color: #d9e6f2;  // Slightly darker light blue background
+        color: #1a1a1a;  // Darker text color (near-black)
     }
 
     header, footer {
-        background-color: #005bb5;  // Darker blue for header and footer
+        background-color: #003366;  // Dark blue for header and footer
         color: white;
     }
 
     h1, h2, h3 {
-        color: #005bb5;  // Primary color for headings
+        color: #003366;  // Darker blue for headings
+    }
+
+    p, a {
+        color: #1a1a1a;  // Darker text for paragraphs and links
     }
 
     .button {
@@ -25,18 +29,22 @@
 
 // Red theme styles
 .red-theme {
-    html, body {
-        background-color: #ffe6e6;  // Light red background
-        color: #000;  // Text color for red theme
+    html, body, .container, .page, .content, main {
+        background-color: #f2d9d9;  // Slightly darker light red background
+        color: #1a1a1a;  // Darker text color (near-black)
     }
 
     header, footer {
-        background-color: #b50000;  // Dark red for header and footer
+        background-color: #800000;  // Dark red for header and footer
         color: white;
     }
 
     h1, h2, h3 {
-        color: #b50000;  // Primary color for headings
+        color: #800000;  // Dark red for headings
+    }
+
+    p, a {
+        color: #1a1a1a;  // Darker text for paragraphs and links
     }
 
     .button {
