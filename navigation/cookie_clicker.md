@@ -1,10 +1,22 @@
-# Cookie Clicker Game
+---
+layout: page
+title: Cookie Clicker
+description: Cookie Clicker
+permalink: /cookie/
+---
 
-<p>Click the cookie to earn points!</p>
+{% include nav/home.html %}
+
+# 🍪 Cookie Clicker Game 🍪
+
+<p style="text-align: center; font-size: 1.5em;">Click the cookie to earn points!</p>
+
+ ![cookie](../images/Cookie-Clicker.png) 
 
 <div style="text-align: center;">
-  <img src="https://cdn.pixabay.com/photo/2021/01/19/17/01/cookies-5930089_1280.jpg" id="cookie" width="200px" alt="cookie" style="cursor: pointer;">alt="cookie" style="cursor: pointer;">
-  <h2>Score: <span id="score">0</span></h2>
+  <h2 style="font-family: 'Arial', sans-serif; font-size: 2em; color: #4CAF50; margin-top: 20px;">Score: <span id="score">0</
+  
+  span></h2>
 </div>
 
 <script>
@@ -15,5 +27,13 @@
   cookie.addEventListener("click", function() {
     score++;
     scoreDisplay.textContent = score;
+
+    // Add a fun "bounce" effect when clicking the cookie
+    cookie.style.transform = "scale(1.1)";
+    setTimeout(() => {
+      cookie.style.transform = "scale(1)";
+    }, 100);
   });
 </script>
+
+
