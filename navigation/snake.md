@@ -13,6 +13,7 @@ permalink: /snake/
 - Use arrow keys to control the snake.
 - Try to eat the green food to grow longer.
 - Avoid hitting the walls or yourself.
+- The score increases by 1 for every apple the snake eats.
 
 You can play the Snake Game right here!
 
@@ -20,10 +21,13 @@ You can play the Snake Game right here!
     <canvas id="snakeGame" width="400" height="400"></canvas>
 </div>
 
+## Your Score: <span id="score">0</span>
+
 <script>
     // JavaScript Snake Game Code
     const canvas = document.getElementById("snakeGame");
     const ctx = canvas.getContext("2d");
+    const scoreElement = document.getElementById("score");
 
     let snake = [{ x: 200, y: 200 }];
     let direction = { x: 10, y: 0 };
@@ -39,15 +43,15 @@ You can play the Snake Game right here!
         moveSnake();
         drawFood();
         drawSnake();
+        drawScore();
         setTimeout(gameLoop, 100);
     }
 
     function clearCanvas() {
-    // Change the background color to your desired color (e.g., light blue)
-    ctx.fillStyle = "#ADD8E6";  // Light blue background
-    ctx.fillRect(0, 0, canvas.width, canvas.height);  // Fill the entire canvas with the background color
-}
-
+        // Change the background color to your desired color (e.g., light blue)
+        ctx.fillStyle = "#ADD8E6";  // Light blue background
+        ctx.fillRect(0, 0, canvas.width, canvas.height);  // Fill the entire canvas with the background color
+    }
 
     function drawSnake() {
         snake.forEach(part => {
@@ -62,6 +66,7 @@ You can play the Snake Game right here!
 
         if (head.x === food.x && head.y === food.y) {
             score++;
+            updateScore();
             food = { x: Math.floor(Math.random() * 40) * 10, y: Math.floor(Math.random() * 40) * 10 };
         } else {
             snake.pop();
@@ -95,5 +100,23 @@ You can play the Snake Game right here!
         return false;
     }
 
+    function updateScore() {
+        scoreElement.textContent = score;
+    }
+
+    function drawScore() {
+        ctx.fillStyle = "black";
+        ctx.font = "16px Arial";
+        ctx.fillText("Score: " + score, 10, 20);  // Draws the score at the top left corner
+    }
+
     gameLoop();
+</script>
+
+<script>
+  // Prevent the default behavior for the arrow keys
+  window.addEventListener("keydown", function(e) {
+    if (["ArrowUp", "ArrowDown", "ArrowRight", "ArrowLeft"].includes(e.key))
+      e.preventDefault();
+  });
 </script>
