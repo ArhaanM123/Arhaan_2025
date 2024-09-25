@@ -21,6 +21,8 @@ permalink: /cookie/
   <h2 style="font-family: 'Arial', sans-serif; font-size: 2em; color: #4CAF50; margin-top: 20px;">Score: <span id="score">0</span></h2>
 </div>
 
+
+
 <script>
   let score = 0;
   const cookie = document.getElementById("cookie");
