@@ -28,7 +28,7 @@ hide: true
 --->
 
 <br>
-<a href="https://illuminati1618.github.io/yash_2025/2024/10/15/finalprojectsprint2_IPYNB_2_.html">
+<a href="https://arhaanm123.github.io/Arhaan_2025/Final/Projects/Sprint2">
 Sprint 2 Final Project and Culmination of Lessons
 </a>
 
