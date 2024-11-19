@@ -24,5 +24,6 @@ plugins:
 header_pages:
   - navigation/blog.md
   - navigation/search.md
+  - navigation/corrections.md
   - navigation/about.md
   - README4YML.md
