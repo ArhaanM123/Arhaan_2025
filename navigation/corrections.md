@@ -1,5 +1,5 @@
 ---
-layout: corrections
+layout: post
 title: Corrections
 search_exclude: true
 permalink: /corrections/
