@@ -23,8 +23,9 @@ plugins:
   - jekyll-remote-theme
 minima:
   nav_pages:
-  - navigation/blog.md
+  - navgation/blog.md
   - navigation/search.md
   - navigation/corrections.md
   - navigation/about.md
   - README4YML.md
+
