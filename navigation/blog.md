@@ -4,7 +4,7 @@ title: Blogs
 search_exclude: true
 permalink: /blogs/
 ---
-<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/main.scss' | relative_url }}">
 
 <button onclick="toggleTheme()">Change Theme</button>
 
