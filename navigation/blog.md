@@ -26,3 +26,4 @@ permalink: /blogs/
   // Set initial theme
   document.body.classList.add('blue-theme');  // Default theme
 </script>
+
